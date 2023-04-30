@@ -1,0 +1,44 @@
+// Mixins acá
+
+@border-radius: 20px;
+
+
+.btn(){
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-2 {
+    .btn();
+    background: rgb(3, 3, 3);
+    background: linear-gradient(0deg, rgb(3, 3, 3) 0%, rgb(25, 25, 26) 100%);
+    border: none;
+  
+    &:before{
+    height: 0%;
+    width: 2px;
+  }
+
+    &:hover {
+        background: rgb(24, 3, 252);
+        box-shadow:  4px 4px 6px 0 rgba(1, 1, 1, 0.5),
+        -4px -4px 6px 0 rgba(0, 0, 0, 0.5), 
+inset -4px -4px 6px 0 rgba(255,255,255,.2),
+inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+}
